@@ -210,8 +210,8 @@ curl -X POST http://localhost:8001/question \
   "answera": "Based on the provided CONTEXT, engine misfires can be caused by worn spark plugs, faulty ignition coils, low fuel pressure, or vacuum leaks..."
 }
 ```
-![Alt text](images/i1.png)
-![Alt text](images/i2.png)
+![Alt text](images/i1v2.png)
+![Alt text](images/i2v2.png)
 
 ### 2. Submit User Feedback (`POST /feedback`)
 
@@ -235,8 +235,8 @@ curl -X POST http://localhost:8001/feedback \
 
 ---
 
-![Alt text](images/i3.png)
-![Alt text](images/i4.png)
+![Alt text](images/i3v2.png)
+![Alt text](images/i4v2.png)
 
 ## 📊 Data Generation & Evaluation
 
@@ -318,8 +318,8 @@ http://localhost:3000
 
 ---
 
-![Alt text](images/i5.png)
-![Alt text](images/i6.png)
+![Alt text](images/i5v2.png)
+![Alt text](images/i6v2.png)
 
 ## ⚙️ Useful Management Commands
 

@@ -1,0 +1,101 @@
+issue_id,question
+issue_0001,How can I determine if a vacuum leak is the cause of the P0171 (System Too Lean Bank 1) code?
+issue_0001,"What voltage range should I see on the MAF sensor when the engine is idling, and how do I test it for a P0171 condition?"
+issue_0002,How can I tell if my spark plugs are the cause of the random/multiple cylinder misfire (P0300) and when should they be replaced?
+issue_0002,"What is the correct fuel pressure for my engine, and how do I test it to rule out low fuel pressure as a cause of the P0300 code?"
+issue_0003,Why is the check engine light on and my vehicle experiencing reduced performance with a P0420 code?
+issue_0003,What diagnostic steps can I take to determine if my catalytic converter or an O₂ sensor is causing the P0420 code?
+issue_0004,What does a P0455 (Evaporative Emission System Leak Detected – Large Leak) code indicate and how urgent is it to fix?
+issue_0004,"Could a loose or faulty gas cap be the only cause of this large EVAP leak, and how can I verify it before doing more extensive tests?"
+issue_0005,What are the signs that the transmission pan gasket is leaking and causing the fluid spots under my car?
+issue_0005,"Can I replace the transmission pan gasket myself, and what tools and steps are required?"
+issue_0006,What causes the brake pedal to pulse and how can I tell if my rotors are warped?
+issue_0006,Do I need to replace the rotors or can they be resurfaced to eliminate the vibration?
+issue_0007,How can I determine whether the low voltage is caused by a failing battery or a malfunctioning alternator?
+issue_0007,"What voltage reading should I expect from a healthy battery when the engine is off, and how do I interpret the results of a load test?"
+issue_0008,What could be causing the clunking noise when I drive over bumps and how can I tell if the strut mounts are the problem?
+issue_0008,What diagnostic steps should I follow to check for worn strut mounts or degraded bushings on the front suspension?
+issue_0009,What are the signs that my thermostat is stuck and how can I test its operation?
+issue_0009,"Why isn't my radiator fan turning on, and what steps should I take to diagnose the fan circuit?"
+issue_0010,What does a P0113 (Intake Air Temperature Sensor Circuit High) code indicate and why does it cause a rough idle when the engine is cold?
+issue_0010,How can I test the IAT sensor voltage and inspect the wiring to determine if the sensor or a wiring short is causing the P0113 code?
+issue_0011,Why is the check engine light on and my engine temperature staying below the normal operating range?
+issue_0011,How can I test whether the thermostat is stuck open or if the coolant temperature sensor is faulty?
+issue_0012,What does the P0401 code mean and why is my check engine light flashing with a rough idle?
+issue_0012,How can I tell if my EGR valve or passages are clogged and what steps should I take to fix it?
+issue_0013,What is the best way to test the vehicle speed sensor voltage with a multimeter to confirm it’s causing the P0500 code?
+issue_0013,"Could a dirty or damaged tone ring be responsible for the erratic speedometer and transmission shift problems, and how do I inspect it?"
+issue_0014,What are the common wiring problems that can cause a P0700 code and how can I test them?
+issue_0014,"Can low transmission fluid pressure trigger a P0700 code, and how do I check the fluid level and pressure properly?"
+issue_0015,What does the P0A20 code indicate and how critical is it for vehicle safety?
+issue_0015,"Can I diagnose and repair the airbag control module or wiring harness myself, or should I take the vehicle to a dealership?"
+issue_0016,What are the steps to test the knock sensor voltage and resistance for a P0325 code?
+issue_0016,"Could a water‑damaged connector or incorrect sensor gap cause the Knock Sensor 1 Circuit High Input error, and how can I check them?"
+issue_0017,Why is my throttle feeling unresponsive and causing jerky acceleration even after cleaning the throttle body?
+issue_0017,Could a faulty throttle position sensor or wiring issue be triggering the P2101 code and how can I test it?
+issue_0018,What are the signs that a clogged PCV valve is causing the P0C03 code and how can I test the valve myself?
+issue_0018,"If the PCV valve and breather hose look fine, could worn piston rings be the cause of the high crankcase pressure and what compression test results should I look for?"
+issue_0019,"Why does my engine crank but not start while the security light is flashing, and what does the P1500 code indicate?"
+issue_0019,How can I test the immobilizer antenna ring and its wiring to determine if it’s causing the P1500 malfunction?
+issue_0020,How can I measure the throttle actuator control motor current to determine if it's below the specified value?
+issue_0020,What wiring or ground issues could cause low supply voltage or high resistance that triggers the P2108 code?
+issue_0021,What does a MAP sensor circuit low voltage (P0106) code mean and why is my engine idling rough?
+issue_0021,How can I properly test the MAP sensor voltage and wiring to diagnose a P0106 fault?
+issue_0022,What does the O2 Sensor Heater Circuit Malfunction (Bank 2 Sensor 1) code mean and how does it affect my vehicle's performance?
+issue_0022,"How can I test the heater circuit and determine if the sensor, fuse, or wiring needs to be replaced?"
+issue_0023,How can I determine if the ignition coil for cylinder 1 is the cause of the P0301 misfire code?
+issue_0023,What are the step‑by‑step procedures to test the fuel injector pulse and compression on cylinder 1 for diagnosing a P0301 misfire?
+issue_0024,What voltage readings should I see at the battery with the engine off and running to confirm a low system voltage problem?
+issue_0024,How can I test whether the alternator or the battery is causing the P0562 code and the related symptoms?
+issue_0025,Why does the parking brake light stay on and the brake warning chime sound even when the brake is released?
+issue_0025,How can I check the continuity of the parking brake switch circuit and inspect the wiring for faults?
+issue_0026,How can I check the voltage at the TCM power pin to confirm it’s delivering the proper 12 V?
+issue_0026,What are common reasons for a bad ground on the Transmission Control Module and how do I diagnose and repair it?
+issue_0027,"Why am I experiencing hard shifts, delayed engagement, and a check engine light with a P0706 transmission control system range/performance code?"
+issue_0027,What are the step‑by‑step procedures to test the transmission shift solenoid and diagnose the cause of a P0706 code?
+issue_0028,How do I measure the fuel pressure at idle to determine if the pressure is below the 30‑45 psi specification?
+issue_0028,What is the proper procedure for replacing a clogged fuel filter and then testing if the P1125 code is resolved?
+issue_0029,"Why am I getting black smoke, a rough idle, and a strong fuel smell with a P2187 code?"
+issue_0029,What is the proper procedure to test for a leaking fuel injector when diagnosing a System Too Rich at Idle (Bank 1) condition?
+issue_0030,How can I determine whether the ECM temperature reading is accurate or if the sensor itself is faulty?
+issue_0030,What are the best methods to improve ventilation and cooling for the ECM to prevent the P2500 code from reappearing?
+issue_0031,What are the common symptoms and how can I confirm that my Bank 2 catalytic converter efficiency is below the 80% threshold?
+issue_0031,What diagnostic steps should I follow to rule out oxygen sensor or exhaust leak problems before deciding to replace the catalyst?
+issue_0032,What is the best way to determine if the spark plug on cylinder 2 is causing the P0302 misfire code?
+issue_0032,How can I test the ignition coil for cylinder 2 to see if it is the source of the misfire?
+issue_0033,How can I test the coolant temperature sensor for a short to voltage and confirm if it’s causing the P0118 code?
+issue_0033,"What are the correct resistance values for the coolant temperature sensor at cold and hot temperatures, and how do I measure them?"
+issue_0034,What voltage readings should I see with the battery and alternator when diagnosing a P0560 System Voltage Malfunction?
+issue_0034,"Could a loose battery terminal or bad wiring trigger the P0560 code, and how do I inspect and fix them?"
+issue_0035,How can I tell if the voltage imbalance in my hybrid battery pack is caused by a bad BMS versus a single faulty cell module?
+issue_0035,"What steps should I follow to safely perform a battery balance procedure using a manufacturer‑specific scan tool, and how do I know if the imbalance persists after the procedure?"
+issue_0036,Why does my car pull to one side when I apply the brakes and the pedal feels spongy?
+issue_0036,What diagnostic steps should I follow to determine if a rear brake caliper is stuck and how can I repair it?
+issue_0037,What are the signs that my front strut mounts are worn out and need replacement?
+issue_0037,"How can I perform a bounce test to diagnose a bad strut mount, and should I get an alignment after the repair?"
+issue_0038,What are the most common reasons for a Camshaft Position Sensor (Bank 1) circuit to become intermittent and trigger a P0340 code?
+issue_0038,How can I properly test the sensor’s resistance and signal waveform to determine if the Camshaft Position Sensor (Bank 1) needs to be replaced?
+issue_0039,Why does my radiator fan keep running continuously even after I turn the engine off?
+issue_0039,What are the steps to test or replace a radiator fan relay that might be stuck open?
+issue_0040,What could cause the Transmission Over‑Temperature Warning (P0715) and how can I tell if the fluid level or cooler is the problem?
+issue_0040,How do I test the transmission fluid temperature sensor resistance and what readings indicate it needs to be replaced?
+issue_0041,How can I test the voltage signal from the MAF sensor to see if it’s fluctuating within the proper 0.5‑4.5 V range?
+issue_0041,"What’s the best way to clean a dirty MAF sensor, and will cleaning it fix the rough idle and stalling symptoms?"
+issue_0042,Why is my engine stalling and not starting when the OBD code P0565 (Crankshaft Position Sensor Circuit Malfunction) appears?
+issue_0042,What is the correct procedure to test the crankshaft position sensor resistance and check for wiring or connector problems?
+issue_0043,What are the steps to test the crankshaft position sensor A voltage and determine if it’s reading too high?
+issue_0043,How can I identify and repair a wiring short to battery that could be causing a P0335 high‑input condition?
+issue_0044,How can I test the transmission input shaft speed sensor to verify if it’s causing the P0701 code?
+issue_0044,What are the most common causes of a Transmission Input Shaft Speed Sensor Circuit Malfunction and how can I repair them?
+issue_0045,"What are the typical fuel pressure specifications for my engine, and how can I test if the pressure is too high causing a rich condition?"
+issue_0045,How can I identify a leaking fuel injector versus a faulty O₂ sensor when I see black smoke and a strong gasoline odor?
+issue_0046,What is the correct procedure for measuring the voltage on the turbocharger boost pressure sensor to verify a low‑voltage reading?
+issue_0046,"Could a vacuum hose crack or wiring short to ground cause the P1234 code, and how can I inspect those components?"
+issue_0047,How do I measure the resistance of the front left wheel‑speed sensor and what reading indicates it needs to be replaced?
+issue_0047,"What are the most common reasons for an intermittent ABS warning light on the front left side, and how can I inspect the tone ring and connector for those issues?"
+issue_0048,"What are the signs that the power steering reservoir seal, rather than another component, is causing the fluid leak?"
+issue_0048,"Can I temporarily fix a power steering fluid leak by cleaning and applying sealant, or should I replace the reservoir immediately?"
+issue_0049,Why is my engine overheating and the cooling fan not engaging even though the check engine light is on?
+issue_0049,What is the proper procedure to test the coolant temperature sensor for a short to ground or wiring damage?
+issue_0050,How can I tell if the throttle position sensor is giving correct live data before cleaning the throttle body?
+issue_0050,"What voltage should I see at the throttle motor terminals, and what does it mean if the motor doesn’t move when I apply 12 V?"

@@ -1,0 +1,36 @@
+[project]
+name = "vehicle-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.139.2",
+    "jupyter>=1.1.1",
+    "langchain-chroma>=1.1.0",
+    "langchain-core>=1.5.3",
+    "langchain-google-genai>=4.3.2",
+    "langchain-openai>=1.4.2",
+    "langgraph>=1.2.10",
+    "minsearch>=0.2.0",
+    "numpy>=2.4.6",
+    "onnxruntime>=1.28.0",
+    "openai>=2.45.0",
+    "opentelemetry-api>=1.44.0",
+    "opentelemetry-sdk>=1.44.0",
+    "pandas>=3.0.3",
+    "psycopg2-binary>=2.9.12",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.0",
+    "sqlitesearch>=0.3.0",
+    "tokenizers>=0.22.2",
+    "tqdm>=4.68.4",
+    "uvicorn>=0.51.0",
+]
+
+[dependency-groups]
+dev = [
+    "huggingface-hub>=1.26.0",
+    "jupyter>=1.1.1",
+]

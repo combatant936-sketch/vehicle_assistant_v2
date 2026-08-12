@@ -63,7 +63,7 @@ Here is the exact responsibility of every file in the repository:
 - **`project/tracerdb.py`**: OpenTelemetry span exporter that writes tracing data to PostgreSQL, capturing operation names, start/end times, input/output tokens, and costs.
 - **`project/versions/v2/rag.py`**: Production **LangGraph Agentic RAG** graph:
   - **`RAGState`**: TypedDict schema tracking query, rewritten query, documents, generation, relevance score, retries, and max retries.
-  - **`hybrid_search`**: Merges SQLite BM25 text search (with field boosts: `issue_name: 2.98`, `component: 2.86`, `system: 2.25`, `diagnostic_steps: 2.11`, `likely_causes: 2.04`, `symptoms: 1.71`, `severity: 1.19`, `diy_or_mechanic: 1.07`, `obd_code: 0.88`) and ChromaDB vector search using Reciprocal Rank Fusion (RRF).
+  - **`hybrid_search`**: Merges SQLite BM25 text search (with field boosts) and ChromaDB vector search using Reciprocal Rank Fusion (RRF).
   - **`grade_documents`**: LLM node evaluating retrieved document relevance scores (0.0 to 1.0) and keeping relevant context.
   - **`rewrite_query`**: LLM query rewriter node invoked when retrieval relevance falls below threshold.
   - **`generate_answer`**: Constructs answer strictly from retrieved context and executes `evaluate_relevance` (LLM-as-a-Judge rating `RELEVANT`, `PARTLY_RELEVANT`, `NON_RELEVANT`) and calculates token costs.

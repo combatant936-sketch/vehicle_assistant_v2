@@ -3,24 +3,19 @@ import os
 from typing import TypedDict, Literal
 from time import time
 from dotenv import load_dotenv
-
-
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 import json
 from langgraph.graph import StateGraph, END
-import csv
-
 import sys
 import os
-sys.path.append(os.path.abspath('..')) # Adds the parent directory to the path
-
-from project.ingest_fresh_or_load_data import load_or_build_text_index,create_or_load_vectorstore
-
+from pathlib import Path
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import SimpleSpanProcessor
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 from project.tracerdb import PostgresSpanExporter
+from project.ingest_fresh_or_load_data import load_or_build_text_index,create_or_load_vectorstore
 load_dotenv()
 POSTGRES_DB=os.getenv("POSTGRES_DB")
 POSTGRES_USER=os.getenv("POSTGRES_USER")

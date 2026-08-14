@@ -8,8 +8,9 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 import csv
 from dotenv import load_dotenv
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent))
 load_dotenv()
-sys.path.append(os.path.abspath('..')) # Adds the parent directory to the path
 from embedder import Embedder
 PERSIST_DIR = os.getenv("CHROMA_DB_DIR")
 SQLITESEARCHDB = os.getenv("SQLITESEARCHDB")

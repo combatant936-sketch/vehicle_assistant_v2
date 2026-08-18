@@ -10,6 +10,12 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 3s
+      timeout: 5s
+      retries: 5
+
   app:
     build:
       context: .
@@ -23,8 +29,13 @@ services:
       - SQLITESEARCHDB=${SQLITESEARCHDB}
       - CHROMA_COLLECTION=${CHROMA_COLLECTION}
       - CHROMA_DB_DIR=${CHROMA_DB_DIR}
+      - CHROMA_TEST_COLLECTION=${CHROMA_TEST_COLLECTION}
+      - CHROMA_DB_TEST_DIR=${CHROMA_DB_TEST_DIR}
       - MODEL_BASE_URL=${MODEL_BASE_URL}
-      - DATA_PATH=${DATA_PATH}
+      - DATA_FILE_PATH=${DATA_FILE_PATH}
+      - DATA_TEST_FILE_PATH=${DATA_TEST_FILE_PATH}
+      - DATA_EVAL_ANSWER_FILE_PATH=${DATA_EVAL_ANSWER_FILE_PATH}
+      - DATA_PATH_FOLDER=${DATA_PATH_FOLDER}
       - POSTGRES_HOST=${POSTGRES_HOST}
       - POSTGRES_PORT=${POSTGRES_PORT}
       - POSTGRES_DB=${POSTGRES_DB}
@@ -37,8 +48,10 @@ services:
     ports:
       - "8001:8000"
     depends_on:
-      - postgres
-      - grafana
+      postgres:
+        condition: service_healthy
+      grafana:
+        condition: service_started
 
   grafana:
     image: grafana/grafana:latest
@@ -58,7 +71,8 @@ services:
       - GF_USERS_AUTO_ASSIGN_ORG_ROLE=Viewer
       - GF_SECURITY_SECRET_KEY=${GRAFANA_SECRET_KEY}
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
 
 volumes:
   postgres_data:

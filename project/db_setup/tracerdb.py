@@ -1,12 +1,23 @@
+import time
 import psycopg2
 from opentelemetry.sdk.trace.export import SpanExporter, SpanExportResult
 
 
 class PostgresSpanExporter(SpanExporter):
 
-    def __init__(self, dsn):
+    def __init__(self, dsn, max_retries=10, retry_delay=2):
         # dsn example: "dbname=ragdb user=postgres password=... host=localhost port=5432"
-        self.conn = psycopg2.connect(dsn)
+        self.dsn = dsn
+        self.conn = None
+        for attempt in range(max_retries):
+            try:
+                self.conn = psycopg2.connect(dsn)
+                break
+            except psycopg2.OperationalError as e:
+                if attempt == max_retries - 1:
+                    raise e
+                time.sleep(retry_delay)
+
         with self.conn.cursor() as cur:
             cur.execute("""
                 CREATE TABLE IF NOT EXISTS spans (

@@ -9,13 +9,22 @@ from zoneinfo import ZoneInfo
 TZ_INFO = os.getenv("TZ", "Asia/Karachi")
 tz = ZoneInfo(TZ_INFO)
 
-def get_db_connection():
-    return psycopg2.connect(
-        host=os.getenv("POSTGRES_HOST", "postgres"),
-        database=os.getenv("POSTGRES_DB", "vehicle_assistant"),
-        user=os.getenv("POSTGRES_USER", "user"),
-        password=os.getenv("POSTGRES_PASSWORD", "password"),
-    )
+import time
+
+def get_db_connection(max_retries=5, retry_delay=2):
+    for attempt in range(max_retries):
+        try:
+            return psycopg2.connect(
+                host=os.getenv("POSTGRES_HOST", "postgres"),
+                port=os.getenv("POSTGRES_PORT", "5432"),
+                database=os.getenv("POSTGRES_DB", "vehicle_assistant"),
+                user=os.getenv("POSTGRES_USER", "user"),
+                password=os.getenv("POSTGRES_PASSWORD", "password"),
+            )
+        except psycopg2.OperationalError as e:
+            if attempt == max_retries - 1:
+                raise e
+            time.sleep(retry_delay)
 
 def init_db():
     conn = get_db_connection()

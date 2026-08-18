@@ -2,7 +2,7 @@ import uuid
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import project.versions.v2.rag as rag
-import project.db as db
+import project.db_setup.db as db
 from typing import Optional, Any,Literal
 
 app = FastAPI()

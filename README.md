@@ -515,6 +515,9 @@ curl -X POST http://localhost:8001/question \
 
 ---
 
+![alt text](images/i1.png)
+![alt text](images/i2.png)
+
 ### 2. Submit User Feedback (+1 / -1)
 
 - **Endpoint**: `POST /feedback`
@@ -538,6 +541,11 @@ curl -X POST http://localhost:8001/feedback \
 ```
 
 ---
+![alt text](images/i3.png)
+![alt text](images/i4.png)
+![alt text](images/i5.png)
+![alt text](images/i6.png)
+
 
 ## 💻 Comprehensive Command Reference
 
